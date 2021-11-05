@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+}
+.container {
+    width: 20rem;
+    height: 21rem;
+    text-align: center;
+    color: #fff;
+    border: solid 1px #888;
+    margin: 40px;
+}
+.visor {
+    display: flex;
+    height: 6rem;
+    background-color: #B2DFDB;
+    position: relative;
+    border: solid 1px #888;
+    overflow: auto;
+}
+#visor-total {
+    color: #000;
+    font-size: 2.2rem;
+    position: absolute;
+    right: 4%;
+    bottom: 4%;
+}
+#visor-dados {
+    color: #000;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 10%;
+    left: 4%;
+}
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 48px 48px 48px 48px 48px;
+}
+.btn {
+    font-size: 1.4em;
+    background-color: #f0f0f0;
+    border: solid 1px #888;
+    outline: none;
+}
+.btn:active {
+    background-color: #ccc;
+}
+.btn-op {
+    background-color: #fa8231;
+    color: #fff;
+}
+.btn-op:active {
+    background-color: #fa8231cc;
+}
+.btn-limp {
+    background-color: #757575;
+    color: #fff;
+    grid-column: span 4;
+}
+.btn-limp:active {
+    background-color: #757575cc;
+}
